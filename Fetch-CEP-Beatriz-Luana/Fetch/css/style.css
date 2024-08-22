@@ -1,0 +1,102 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9f2f9; 
+    margin: 0;
+    padding: 0;
+    color: #003366; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group .col-form-label {
+    font-weight: bold;
+    color: #0056b3; 
+    transition: color 0.3s ease;
+}
+
+.input-group .form-control {
+    border-radius: 30px; 
+    border: 2px solid #b0c4de; 
+    
+}
+
+.input-group .form-control:focus {
+    border-color: #0056b3; 
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); 
+}
+
+.input-group .btn {
+    border-radius: 20px; /* Rounded corners for buttons */
+    background-color: #0056b3; /* Dark blue button */
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.input-group .btn:hover {
+    background-color: #003d7a; /* Darker blue on hover */
+}
+
+/* JSON Output Div Styling */
+#json {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e7f0f7; /* Very light blue background */
+    border-radius: 15px; /* Rounded corners for JSON output */
+    border: 1px solid #b0c4de; /* Light blue border */
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1); /* Blue shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+#json p {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0;
+    color: #003366; /* Dark blue text */
+    transition: color 0.3s ease;
+}
+
+/* Error Message Styling */
+.alert-danger {
+    background-color: #d0e0f0; /* Light blue background for errors */
+    color: #003366; /* Dark blue text for errors */
+    border-radius: 15px; /* Rounded corners for error messages */
+    padding: 15px;
+    border: 1px solid #a0b5d6; /* Light blue border for errors */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+
+    .input-group .col-form-label {
+        font-size: 14px;
+    }
+
+    .input-group .form-control, 
+    .input-group .btn {
+        font-size: 14px;
+    }
+
+    #json p {
+        font-size: 14px;
+    }
+}
